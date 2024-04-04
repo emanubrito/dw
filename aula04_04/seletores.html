@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletoress CSS</title>
+
+    <style>
+       html{
+
+        background-color: rgb(107, 110, 110);
+       }
+    h1{
+        /* Seleciona todas as tags h1 */
+        color: aqua;
+    }
+     /*  */
+    p {
+        color: rgb(66, 66, 64);
+    }
+     /* Selecione o elemento com o id título_principal */
+    #título_principal{
+        color: blueviolet;
+        font-style: normal;
+    
+    }
+
+    #conteudo_principal{
+        color: brown;
+        text-decoration: underline;
+    }
+
+    /* Selecione todos os elementos com a classe destaque */
+    .destaque{
+        background-color: rgb(173, 212, 228);
+        color: blue;
+       
+    }
+    /* Selecione todos os elementos com a classe cor_primaria */
+    .cor_primaria{
+        color: rgb(169, 89, 245);
+    }
+    .container{
+        background-color: rgb(171, 166, 221);
+        border: 10px;
+    }
+      /* Selecione todas as tags p que tenham a classe destaque  */
+      p.destaque{
+        font-size: 20px;
+
+    }
+    p.destaque.cor_primaria{
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+     <h1 id="título_principal">Primeiro Título</h1>
+
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quibusdam esse velit eos hic amet alias suscipit quod voluptatibus? Expedita rerum sed laboriosam ad fuga officia pariatur voluptates! Hic, consectetur?</p>
+
+    </div>
+
+    <h1 class="destaque">Segundo Título</h1>
+
+    <p class="destaque ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis molestiae laboriosam placeat, eius culpa voluptatibus quasi eos harum fugiat! Officia nulla magnam velit in ad nesciunt, neque commodi unde quas!</p>
+    
+    <p id="conteudo_principal"cor_primaria>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae totam velit alias dignissimos laudantium, amet delectus, laboriosam voluptatum minus sit inventore architecto! Perspiciatis accusamus cumque corrupti itaque! Consequuntur, similique.</p>
+
+    <p class="destaque cor_primaria">parágrafo</p>
+</body>
+</html>
