@@ -1,0 +1,37 @@
+.cabecalho {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.titulo {
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.versiculo {
+    font-family: "Shadows Into Light", cursive;
+    text-align: center;
+}
+
+.texto {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.importante {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+    font-family: "Nunito", sans-serif;
+}
+
+.desafio {
+    font-style: italic;
+    text-align: center;
+    background-color: gray;
+    border: 1px;
+}
