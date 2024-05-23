@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variaveis CSS</title> 
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Major+Mono+Display&family=Poetsen+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Major+Mono+Display&family=Noto+Sans+Duployan:wght@400;700&family=Poetsen+One&display=swap');
+        :root {
+            --cor-fundo: black;
+            --cor-principal: red;
+            --fonte: 14px "Poetsen One", sans-serif;
+            --fonte-destaque: 50px "Jacquard 12", system-ui;
+            
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font: var(--fonte);
+        }
+
+        .container {
+            background-color: var(--cor-fundo);
+            height: 100vh;
+        }
+
+        .cabecalho {
+            border: 1px solid var(--cor-fundo);
+            color: var(--cor-principal);
+            height: 100px;
+            overflow-x: hidden;
+            padding: 10px;
+        }
+
+        .principal {
+            border: 1px solid var(--cor-principal);
+            color: var(--cor-principal);
+            padding: 10px;
+        }
+
+        .principal h1 {
+            padding: 10px;
+            font: var(--fonte-destaque);
+        }
+
+        .principal ul {
+            padding-left: 25px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+        </div>
+        <div class="principal">
+            <h1>Lista de Tarefas</h1>
+            <ul>
+                <li>Tarefa1</li>
+                <li>Tarefa2</li>
+                <li>Tarefa3</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
