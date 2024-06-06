@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            width: 6.25rem;
+            height: 6.25rem;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .posicaoFixa {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .fundo_amarelo{
+            background-color: yellow;
+            border: 2px darkblue solid;
+            color: white;
+        }
+
+        .fundo_verde{
+            background-color: green;
+            border: 2px darkblue solid;
+            color: white;
+        }
+
+        .fundo_azul{
+            background-color: blue;
+            border: 2px darkblue solid;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box fundo_amarelo">1</div>
+        <div class="box fundo_azul">2</div>
+        <div class="box fundo_verde">3</div>
+    </div>
+</body>
+</html>
