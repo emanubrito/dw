@@ -21,8 +21,9 @@
             scroll-behavior: smooth;
         }
 
-        .container {
-            background-color: black;
+        .inicio {
+            background: rgb(0,0,0);
+            background: radial-gradient(circle, rgba(0,0,0,1) 66%, rgba(255,0,0,1) 100%);
             width: 100vw;
             height: 100vh;
         }
@@ -50,6 +51,7 @@
             text-decoration: none;
             color: black;
             transition: 0.3s;
+            background-size: cover;
         }
 
         .menu a:hover{
@@ -199,17 +201,19 @@
 <body>
 
     <div class="container">
-        
-        <div class="menu"
-        id="menu">
-            <ul>
-                <li><a href="#secao1">Temporadas</a></li>
-                <li><a href="#secao2">Personagens</a></li>
-                <li><a href="#secao4">Resumo</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-            </ul>
+        <div class="inicio">
+            <div class="menu"
+            id="menu">
+                <ul>
+                    <li><a href="#secao1">Temporadas</a></li>
+                    <li><a href="#secao2">Personagens</a></li>
+                    <li><a href="#secao4">Resumo</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </div>
+            <h1 class="titulo">Stranger Things</h1>
         </div>
-        <h1 class="titulo">Stranger Things</h1>
+        
 
         <div id="secao1">
             <div class="box item1"></div>
