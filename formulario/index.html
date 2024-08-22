@@ -6,48 +6,69 @@
     <title>Formulário</title>
 
     <style>
-        .container{
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            align-content: space-evenly;
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .caixa{
             display: flex;
-            flex-wrap: wrap;
-            width: 40vw;
+            flex-wrap: nowrap;
             height: 100vh;
         }
+        .container{
+            display: flex;
+            width: 50%;
+            height: 100%;
+        }
         .login{
-            width: 70vw;
-            height: 30vh;
+            flex: 1;
+            padding: 40px;
            
         }
         .or{
-            width: 100vw;
-            height: 5vh;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 20px 0;
         }
-        .opcoes{
-            
+        hr{
+            width: 16vw;
+            height: 1px;
+            color: black;
+            margin: 0 10px;
+        }
+        .botao{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            color: gray;
+
         }
 
         .final{
            width: 40vw;
         }
-        .rodape{
-            width: 100vw;
-            height: 15vh;
-            align-items: end;
-            border: 1px solid black;
-            background-color: rgb(255, 178, 249);
-            align-items: baseline;
-            font-weight: bold;
-        }
         .imagem{
-            width: 60vw;
+            width: 50%;
             height: 100vh;
-            background-image: url("https://img.freepik.com/fotos-premium/paisagem-bonita-composicao-da-natureza_157744-2216.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100vw;
+            border-radius: 2rem;
+        }
+        .imagem img{
+            width: 60vw;
+            border-radius: 2rem;
+            height: 100vh;
         }
         form{
             display: flex;
@@ -61,6 +82,9 @@
         }
         h1{
             color: black;
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-family: sans-serif;
         }
         input[type=password]{
             color: black;
@@ -68,67 +92,78 @@
         input::placeholder{
             color: black;
         }
-        h1{
-            font-size: 22px;
-            font-family: sans-serif;
-        }
         .sub{
             font-size: 13px;
             font-family: sans-serif;
             text-align: left;
         }
-        button{
-            background-color: #000000; 
-            border: none;
-            color: white;
-            padding: 7px 32px;
-            text-align: center;
-            font-size: 13px;
-        }
-        .botao{
+        
+        .continue{
             width: 40vw;
             height: 7vh;
-            border: 1px solid black;
-
+            background-color: black; 
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 13px;
+            border-radius: 5px;
+            cursor: pointer;
         }
         p{
             font-family: sans-serif;
             font-size: 13px;
             text-align: center;
         }
-        .logo_g{
-            background-image: url("https://w7.pngwing.com/pngs/989/129/png-transparent-google-logo-google-search-meng-meng-company-text-logo.png");
+        .logo img{
+            width: 2rem;
+            height: 2rem;
+        }
+        .botao img{
+            flex-grow: 1;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class = "container">
-        <div class="caixa">
-            <div class="login"><p><h1>Sign in or create an account</h1>
-
-                <p class = "sub">Welcome back! Please enter your details</p>
+        <div class="login">
+            <div class="entrar">
+                <h1>Sign in or create an account</h1>
+                <p>Welcome Back! Please enter your details</p>
 
                 <form action="#" method="get">
                     <label for="nomeUsuario"></label>
                     <input type="text" id="nome" placeholder="Name">
-                    
-                
-            
                     <label for="senha"></label>
                     <input type="text" id="senha" placeholder="Email address">
-            
-                    <button type = "button">Continue</button>
-            
-                </form></p></div>
-            <div class="or"><p>or</p></div>
-            <div class="opcoes">
-                <div class = "orgn"></div><div class="botao"><p>Continue with Google</p></div><div class="logo_g"></div></div>
-                <div class = "orgn"></div><div class="botao"><p>Continue with Apple</p></div></div>
-                <div class = "orgn"></div><div class="botao"><p>Continue with Facebook</p></div></div>
+                    <p class="continue">Continue</p>
+                </form>
+
+                <div class="or">
+                    <hr>
+                    <p>
+                        or
+                    </p>
+                    <hr>
+                </div>
+
+                <button class="botao">
+                    <div class="logo"><img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt=""></div>
+                    <p>Continue with Google</p>
+                </button>
+                <button class="botao">
+                    <div class="logo"><img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt=""></div>
+                    <p>Continue with Apple</p>
+                </button>
+                <button class="botao">
+                    <div class="logo"><img src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt=""></div>
+                    <p>Continue with Facebook</p>
+                </button>
+                <div class="final"><p>By signing in or an account, you agree with our <u><b>Terms & Conditions</b></u> ans <u><b>Privacy Statement</b></u></p></div>
             </div>
-            <div class="final"><p>By signing in or an account, you agree with our Terms & Conditions ans Privacy Statement</p></div>
         </div>
-        <div class="imagem"></div>
+        <div class="imagem"><img src="https://img.freepik.com/fotos-premium/paisagem-bonita-composicao-da-natureza_157744-2216.jpg" alt=""></div>
     </div>
+    
 </body>
 </html>
