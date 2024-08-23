@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .menu{
+            height: 90px;
+            background-color: red
+        }
+
+        .menu ul{
+            display: flex;
+        }
+
+        .menu li{
+            list-style: none;
+        }
+
+        .menu a{
+            display: inline-block;
+            border: 1px solid red;
+            padding: 25px 15px;
+            height: 90px;
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+        }
+
+        .menu a:hover{
+            background-color: black;
+            color: white;
+        }
+
+        #item1 {
+            background: linear-gradient(red, black);
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #item2 {
+            background-image: url("https://upload.wikimedia.org/wikipedia/pt/2/29/Stranger_Things_Temporada_1_Poster.jpg");
+            background-size: cover;
+            background-attachment: scroll;
+            height: 43vh;
+            margin-top: 0;
+            width: 33vw;
+        }
+
+        .titulo {
+            font-family: "Bitter", serif;
+            color: red;
+            text-align: center;
+            margin: 250px;
+            font-size: 70px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="menu">
+            <ul>
+                <li><a href="#item1">Introdução</a></li>
+                <li><a href="#item2">Temporadas</a></li>
+                <li><a href="#item3">opcao3</a></li>
+            </ul>
+        </div>
+        <h1 class="titulo">Stranger Things</h1>
+    </div>
+
+    <div id="item1"></div>
+    <div id="item2"></div>
+
+    
+    
+</body>
+</html>
