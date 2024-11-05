@@ -1,12 +1,19 @@
-function removeDuplicates(arr){
-    let arrNovo = []
-    for(i of arr){
-        if(arr[i-1] !== arr[i]){
-            arrNovo.push(i)
+function removeDuplicates(arr) {
+    const uniqueArray = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        let isDuplicate = false;
+        for (let j = 0; j < uniqueArray.length; j++) {
+            if (arr[i] === uniqueArray[j]) {
+                isDuplicate = true;
+                break;
+            }
+        }
+        if (!isDuplicate) {
+            uniqueArray.push(arr[i]);
         }
     }
-    return arrNovo
+    return uniqueArray;
 }
-
 console.log(removeDuplicates([1, 2, 2, 3, 3, 3, 4])); // Deve exibir: [1, 2, 3, 4]
 console.log(removeDuplicates(["apple", "apple", "banana"])); // Deve exibir: ["apple", "banana"]
